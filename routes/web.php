@@ -4,6 +4,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\HelloController;
 
 /*
@@ -22,6 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', [HelloController::class, 'show']);
+Route::get('/users/list', [UserController::class, 'index'])->middleware('auth');
 
 
 Auth::routes();

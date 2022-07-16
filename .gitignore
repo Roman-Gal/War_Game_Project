@@ -1,6 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/laravel,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=laravel,visualstudiocode
 
+README.md
 ### Laravel ###
 /vendor/
 node_modules/
